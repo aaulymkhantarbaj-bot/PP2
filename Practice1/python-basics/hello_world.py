@@ -1,3 +1,3 @@
-a = int(input())
-print(a)
-print("Hello, World!")
+a = 45
+b = 32
+print(a + b)
