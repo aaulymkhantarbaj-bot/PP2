@@ -101,6 +101,24 @@ for s, i in arr:
 for s in sorted(first_pos):
     print(s, first_pos[s])
 
+#18.1
+n = int(input())
+arr = []
+
+for i in range(n):
+    arr.append(input())
+
+used = []
+for s in arr:
+    if s not in used:
+        used.append(s)
+
+used.sort()
+
+for s in used:
+    print(s, arr.index(s) + 1)
+
+
 #19
 n = int(input())
 d = {}
@@ -139,3 +157,30 @@ for _ in range(n):
             out.append(f"KE: no key {key} found in the document")
 
 sys.stdout.write("\n".join(out))
+
+#20.1
+# Командалар санын оқу
+n = int(input())
+
+# Бос құжат (dictionary)
+doc = {}
+
+# Командаларды өңдеу
+for _ in range(n):
+    parts = input().split()  # Команданы бөліп алу
+    command = parts[0]
+
+    if command == "set":
+        key = parts[1]
+        value = parts[2]
+        # Ключты қосу немесе жаңарту
+        doc[key] = value
+    elif command == "get":
+        key = parts[1]
+        # Егер ключ бар болса, мәнін шығару
+        if key in doc:
+            print(doc[key])
+        else:
+            # Егер ключ жоқ болса, қате хабар
+            print("KE: no key", key, "found in the document")
+
