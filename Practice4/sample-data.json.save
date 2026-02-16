@@ -1,0 +1,99 @@
+{
+  "imdata": [
+    {
+      "l1PhysIf": {
+        "attributes": {
+          "dn": "topology/pod-1/node-201/sys/phys-[eth1/33]",
+          "speed": "inherit",
+          "mtu": "9150"
+        }
+      }
+    },
+    {
+      "l1PhysIf": {
+        "attributes": {
+          "dn": "topology/pod-1/node-201/sys/phys-[eth1/34]",
+          "speed": "inherit",
+          "mtu": "9150"
+        }
+      }
+    },
+    {
+      "l1PhysIf": {
+        "attributes": {
+          "dn": "topology/pod-1/node-201/ssys/phys-[eth1/35]",
+          "speed": "inherit",
+          "mtu": "9150"
+        }
+      }
+    }
+  ]
+}
+{
+  "imdata": [
+    {
+      "l1PhysIf": {
+        "attributes": {
+          "dn": "topology/pod-1/node-201/sys/phys-[eth1/33]",
+          "speed": "inherit",
+          "mtu": "9150"
+        }
+      }
+    },
+    {
+      "l1PhysIf": {
+        "attributes": {
+          "dn": "topology/pod-1/node-201/sys/phys-[eth1/34]",
+          "speed": "inherit",
+          "mtu": "9150"
+        }
+      }
+    },
+    {
+      "l1PhysIf": {
+        "attributes": {
+          "dn": "topology/pod-1/node-201/ssys/phys-[eth1/35]",
+          "speed": "inherit",
+          "mtu": "9150"
+        }
+      }
+    }
+  ]
+}^G
+cd /Users/makbuk/Documents/hello_world/practice1/Practice4 && \
+rm -f sample-data.json && \
+cat > sample-data.json << 'EOF'
+{
+  "imdata": [
+    {
+      "l1PhysIf": {
+        "attributes": {
+          "dn": "topology/pod-1/node-201/sys/phys-[eth1/33]",
+          "speed": "inherit",
+          "mtu": "9150"
+        }
+      }
+    },
+    {
+      "l1PhysIf": {
+        "attributes": {
+          "dn": "topology/pod-1/node-201/sys/phys-[eth1/34]",
+          "speed": "inherit",
+          "mtu": "9150"
+        }
+      }
+    },
+    {
+      "l1PhysIf": {
+        "attributes": {
+          "dn": "topology/pod-1/node-201/ssys/phys-[eth1/35]",
+          "speed": "inherit",
+          "mtu": "9150"
+        }
+      }
+    }
+  ]
+}
+EOF
+python3 practice4_json.py
+
